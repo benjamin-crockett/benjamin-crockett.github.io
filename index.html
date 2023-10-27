@@ -1,30 +1,29 @@
 
-<html lang="en" xml:lang="en">
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-  <meta name="description" content="WebRTIViewer is a simple viewer for high resolution RTI images" />
-  <meta name="keywords"    content="WebGL, Library, JavaScript, 3D, OpenGL, 2D, Graphics, Rendering, Realtime, Real-time, SpiderGL, VCG, RTI" />
-
-  <title>RTI-Viewer</title>
-
-	<link type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="Stylesheet">
-	<link type="text/css" href="css/webrtiviewer.css" rel="Stylesheet">
-	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/pep.min.js"></script>
-	
-	<script type="text/javascript" src="spidergl/spidergl.min.js"></script>
-	<script type="text/javascript" src="spidergl/multires.min.js"></script>
-</head>
-<body>
-    
-
-	<div id="viewerContainer">
-		<script  type="text/javascript">
-			createRtiViewer("viewerContainer", "tomb", $("body").width()-8, $("body").height()-8); 
-		</script>
-	</div>
-
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="description" content="WebRTIViewer is a simple viewer for high resolution RTI images" />
+		<meta name="keywords"    content="WebGL, Library, JavaScript, 3D, OpenGL, 2D, Graphics, Rendering, Realtime, Real-time, SpiderGL, VCG, RTI" /><meta name="viewport" content="directive, directive" />
+		<title>RTI-Viewer | Graffito 296</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link type="text/css" href="css/ui-lightness/jquery-ui-1.10.3.custom.css" rel="Stylesheet">
+		<link type="text/css" href="css/webrtiviewer.css" rel="Stylesheet">
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/pep.min.js"></script>
+		<script type="text/javascript" src="spidergl/spidergl.js"></script>
+		<script type="text/javascript" src="spidergl/multires.js"></script>
+	</head>
+	<body>
+		<h1>Kurru ID 296</h1>
+		<div id="viewerCont">
+			<script  type="text/javascript">
+				createRtiViewer("viewerCont", "rti_files/gr_296", 620, 600); 
+			</script>
+		</div>
+		<p id="instructions">To change the direction of the light source, place your cursor over the image and press and hold the left mouse button. Keep the button pressed as you move the cursor around the image.</p>
+		<p id="credit">WebRTIViewer courtesy of <a href="http://vcg.isti.cnr.it/rti/webviewer.php" target="_blank">Visual Computing Lab - ISTI - CNR</a>.</p>
+	</body>
+</html>	
+		
